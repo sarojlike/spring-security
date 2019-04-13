@@ -16,7 +16,6 @@ public class SucessHandler implements AuthenticationSuccessHandler{
 			Authentication authentication) throws IOException, ServletException {
 		
 		response.setStatus(HttpServletResponse.SC_OK);
-		 
         //since we have created our custom success handler, its up to us to where
         //we will redirect the user after successfully login
 		response.sendRedirect("./welcome");
